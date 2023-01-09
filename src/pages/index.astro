@@ -1,55 +1,107 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
 ---
 
-<Layout title='Welcome to Rockstar Renovations.'>
-	<Navbar />
-	<main>
-		<header class='hero'>
-			<div class='u-container'>
-				<div>
-					<h1>Rockstar Renovations</h1>
-					<p>EST. 2020.</p>
-				</div>
-				<p>
-					An fully insured business, both in general liability and workman's compensation.
-					Renovations for the modern style.
-				</p>
-				<a href='' role='button'>Lets get Rocking</a>
-			</div>
-		</header>
+<Layout title="Welcome to Rockstar Renovations.">
+  <Navbar />
+  <main>
+    <header class="hero">
+      <div class="u-container">
+        <div>
+          <h1>Rockstar Renovations</h1>
+          <p>EST. 2020.</p>
+        </div>
+        <p>
+          An fully insured business, both in general liability and workman's compensation.
+          Renovations for the modern style.
+        </p>
+        <a href="" role="button">Lets get Rocking</a>
+      </div>
+    </header>
 
-		<section class='divider'>
-			<div class='divider__line'>&nbsp;</div>
-			<small class='divider__text'>WE GIVE THE ROCK STAR TREAMENT</small>
-		</section>
+    <section class="divider">
+      <div class="divider__line">&nbsp;</div>
+      <small class="divider__text">WE GIVE THE ROCK STAR TREAMENT</small>
+    </section>
 
-		<section class='our-process'>
-			<div class='u-container'>
-				<header class='our-process__subtitle'>
-					<h2>Our process that rocks.</h2>
-				</header>
-				<article class='our-process__content'>
-					<ul>
-						<li>1. Estimate</li>
-						<li>2. Communicate</li>
-						<li>3. Make it great</li>
-					</ul>
-				</article>
-			</div>
-		</section>
+    <section class="our-process">
+      <div class="u-container">
+        <header class="our-process__subtitle">
+          <h2>Our process that rocks.</h2>
+        </header>
+        <article class="our-process__content">
+          <div class="estimate">
+            <h3>1. Estimate</h3>
+            <p>
+              We provide estimates for any renovation services you may need. We strive to provide
+              accuracy based on your project's scope and our professional experience. We will take
+              the time to discuss the project with you, answer any questions you may have, and
+              provide an estimate for the cost and timeline of the project. Our estimates are
+              comprehensive and detailed, so you know exactly what to expect from your renovation
+              project.
+            </p>
+          </div>
+          <div class="estimate">
+            <h3>2. Communicate</h3>
+            <p>
+              We strive to ensure that our clients are always informed and up-to-date on the status
+              of their project. We provide regular updates to ensure that our clients are aware of
+              the progress of the project and any changes that may have been made. We are also
+              available to answer any questions or concerns that our clients may have throughout the
+              process.
+            </p>
+          </div>
+          <div class="estimate">
+            <h3>3. Make it great</h3>
+            <p>
+              We believe that the quality of our work is essential to a successful renovation
+              project. We take the time to research and source the highest quality materials for
+              every project, ensuring that the end result is of the highest standard. We also use
+              the latest techniques and cutting-edge tools to ensure that our work is efficient and
+              effective. Our team of experienced professionals is dedicated to providing the highest
+              quality of service, so that every job is done right the first time.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-		<section class='tiny-story'>
-			<div class='u-container'>
-				<p>
-					Rockstar Renovations was started in January of 2020 as a side hustle for the owners,
-					Michael and Brett. Soon, the two came to realize that their “side hustle” could be much
-					more and they could even be their own bosses.
-				</p>
-				<a href='' role='button'>See Our Projects</a>
-			</div>
-		</section>
-	</main>
+    <section class="tiny-story">
+      <div class="u-container">
+        <p>
+          Rockstar Renovations was started in January of 2020 as a side hustle for the owners,
+          Michael and Brett. Soon, the two came to realize that their “side hustle” could be much
+          more and they could even be their own bosses.
+        </p>
+        <a href="" role="button">See Our Projects</a>
+      </div>
+    </section>
+
+    <section class="case-studies">
+      <div class="u-container">
+        <header>
+          <h2>Gallery & Studies</h2>
+          <p>
+            We are proud to showcase the projects we have completed for our clients. Each case study
+            showcases the work we have done, as well as our process, from estimate to completion.
+          </p>
+        </header>
+        <article>
+          <div>
+            <img src="https://picsum.photos/200/300/?blur" />
+          </div>
+          <div>
+            <img src="https://picsum.photos/200/300/?blur" />
+          </div>
+          <div>
+            <img src="https://picsum.photos/200/300/?blur" />
+          </div>
+          <div>
+            <img src="https://picsum.photos/200/300/?blur" />
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 </Layout>
