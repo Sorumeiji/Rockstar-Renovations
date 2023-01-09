@@ -1,0 +1,141 @@
+<nav class='navigation u-container'>
+	<div class='hamburger'>&#9776;</div>
+	<div class='nav'>
+		<ul class='navigation-items'>
+			<li><a href='/case-studies'>Home</a></li>
+			<li><a href='/services'>Renovations</a></li>
+			<li><a href='/about'>Our Team</a></li>
+			<li><a href='/articles'>Our Story</a></li>
+			<li><a href='/contact'>Contact Us</a></li>
+		</ul>
+	</div>
+	<div class='filler'>
+		<a href='#'>Link</a>
+	</div>
+</nav>
+<style lang='scss'>
+	.svg-logo {
+		max-width: 80px;
+		width: 100%;
+	}
+
+	.navigation {
+		display: flex;
+		align-items: center;
+		padding-block: var(--space-m);
+		padding-inline: var(--space-2xl);
+	}
+
+	.filler {
+		display: none;
+	}
+
+	.nav {
+		height: 0px;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background-color: var(--dark-color);
+		transition: 0.5s;
+		overflow: hidden;
+
+		&.active {
+			height: 450px;
+		}
+	}
+
+	.hamburger:hover {
+		cursor: pointer;
+	}
+
+	.navigation-items {
+		display: block;
+		text-align: center;
+		width: fit-content;
+		margin-inline: auto;
+		margin-block: 80px auto;
+		transition: 0.5s;
+		opacity: 0;
+
+		& li {
+			list-style-type: none;
+		}
+
+		& li + li {
+			margin-block-start: var(--space-s);
+		}
+
+		& li a {
+			color: white;
+		}
+
+		& li a .active {
+			color: red;
+		}
+	}
+
+	.nav.active .navigation-items {
+		opacity: 1;
+	}
+
+	// .logo,
+	// .filler {
+	// 	flex-grow: 1;
+	// 	flex-basis: 0;
+	// }
+
+	@media (min-width: 56.88rem) {
+		.navigation {
+			justify-content: space-between;
+		}
+
+		.nav,
+		.filler {
+			display: block;
+		}
+
+		.hamburger {
+			display: none;
+		}
+
+		.nav {
+			height: auto;
+			position: relative;
+			top: 0;
+			width: auto;
+			background-color: transparent;
+			transition: 0.2s;
+			overflow: auto;
+		}
+
+		.navigation-items {
+			display: flex;
+			gap: max(calc(10vw - 200px), 16px);
+			margin: 0;
+			opacity: 1;
+
+			& li {
+				list-style-type: none;
+			}
+
+			& li a {
+				color: var(--dark-color);
+			}
+
+			& li + li {
+				margin-inline-start: var(--space-m);
+				margin-block-start: 0;
+			}
+		}
+	}
+</style>
+
+<script>
+	let hamburger: HTMLElement = document.querySelector('.hamburger');
+	hamburger.onclick = function () {
+		let navbar = document.querySelector('.nav');
+		navbar.classList.toggle('active');
+	};
+</script>

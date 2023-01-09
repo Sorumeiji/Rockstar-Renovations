@@ -1,16 +1,23 @@
 ---
+import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Welcome to Rockstar Renovations.'>
+	<Navbar />
 	<main>
 		<header class='hero'>
-			<h1>Rockstar<br /><span>Renovations</span><br /><small>EST. 2020.</small></h1>
-			<p>
-				An fully insured business, both in general liability and workman’s compensation. Renovations
-				for the modern style.
-			</p>
-			<a href='' role='button'>Lets get Rocking</a>
+			<div class='u-container'>
+				<div>
+					<h1>Rockstar Renovations</h1>
+					<p>EST. 2020.</p>
+				</div>
+				<p>
+					An fully insured business, both in general liability and workman's compensation.
+					Renovations for the modern style.
+				</p>
+				<a href='' role='button'>Lets get Rocking</a>
+			</div>
 		</header>
 
 		<section class='divider'>
@@ -19,25 +26,29 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<section class='our-process'>
-			<div class='our-process__subtitle'>
-				<h2>Our process that rocks.</h2>
-			</div>
-			<div class='our-process__content'>
-				<ul>
-					<li>1. Estimate</li>
-					<li>2. Communicate</li>
-					<li>3. Make it great</li>
-				</ul>
+			<div class='u-container'>
+				<header class='our-process__subtitle'>
+					<h2>Our process that rocks.</h2>
+				</header>
+				<article class='our-process__content'>
+					<ul>
+						<li>1. Estimate</li>
+						<li>2. Communicate</li>
+						<li>3. Make it great</li>
+					</ul>
+				</article>
 			</div>
 		</section>
 
 		<section class='tiny-story'>
-			<p>
-				Rockstar Renovations was started in January of 2020 as a side hustle for the owners, Michael
-				and Brett. Soon, the two came to realize that their “side hustle” could be much more and
-				they could even be their own bosses.
-			</p>
-			<a href='' role='button'>See Our Projects</a>
+			<div class='u-container'>
+				<p>
+					Rockstar Renovations was started in January of 2020 as a side hustle for the owners,
+					Michael and Brett. Soon, the two came to realize that their “side hustle” could be much
+					more and they could even be their own bosses.
+				</p>
+				<a href='' role='button'>See Our Projects</a>
+			</div>
 		</section>
 	</main>
 </Layout>
