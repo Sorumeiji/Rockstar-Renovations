@@ -1,0 +1,58 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Welcome to Rockstar Renovations.'>
+	<Navbar />
+	<main>
+		<header class='hero'>
+			<div class='u-container'>
+				<div>
+					<h1>Renovations / Gallery</h1>
+					<p>About Rockstar Renovations</p>
+				</div>
+			</div>
+		</header>
+
+		<section class='our-process'>
+			<div class='u-container flow'>
+				<menu class='our-process__subtitle'>
+					<ul>
+						<li><a href='#'>Bath</a></li>
+						<li><a href='#'>Home</a></li>
+						<li><a href='#'>Kitchen</a></li>
+						<li><a href='#'>Landscape</a></li>
+					</ul>
+				</menu>
+				<article>
+					<div class='smol-flexbox-grid'>
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+						<img src='https://picsum.photos/250/200/' />
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class='tiny-story'>
+			<div class='u-container flow'>
+				<p>
+					Rockstar Renovations was started in January of 2020 as a side hustle for the owners,
+					Michael and Brett. Soon, the two came to realize that their “side hustle” could be much
+					more and they could even be their own bosses.
+				</p>
+				<a href='' role='button'>View Case Studies</a>
+			</div>
+		</section>
+	</main>
+</Layout>
