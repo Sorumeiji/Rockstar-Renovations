@@ -1,7 +1,23 @@
 .hero {
     height: 80vh;
+    background-color: #3d3737;
+    opacity: 90%;
 
     .u-container {
-        background-color: cadetblue;
+        // background-color: cadetblue;
+    }
+
+    .title {
+        color: #fcf4ef;
+        .shiftH1 {
+            margin-inline-start: 0.5em;
+        }
+
+        .shiftP {
+            margin-inline-start: 3.2em;
+        }
+    }
+    .content {
+        color: #fcf4ef;
     }
 }

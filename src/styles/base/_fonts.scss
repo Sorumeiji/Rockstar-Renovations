@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&display=swap");
 
 p,
 li {
-  max-width: 60ch;
+  max-width: 46ch;
 }
 
 p,
@@ -14,10 +14,11 @@ a {
 }
 
 h1 {
-  font-size: var(--step-6);
+  font-size: var(--step-9);
   font-weight: 400;
   font-family: var(--header-font);
   max-width: 20ch;
+  line-height: 0.8;
 }
 
 h2,
