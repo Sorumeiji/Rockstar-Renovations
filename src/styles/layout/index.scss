@@ -1,10 +1,20 @@
 .hero {
-    // height: 80vh;
-    background-color: #3d3737;
-    opacity: 90%;
+    background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 11.4%, rgba(35, 42, 65, 0.9) 70.2%);
+    position: relative;
+    overflow: hidden;
+
+    .video-bg {
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
 
     .u-container {
-        // background-color: green;
     }
 
     .title {
