@@ -1,7 +1,8 @@
 .hero {
-  background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 11.4%, rgba(35, 42, 65, 0.9) 70.2%);
+  background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 11.4%, rgba(35, 42, 65, 1) 70.2%);
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
 
   .video-bg {
     position: absolute;
@@ -15,6 +16,11 @@
   }
 
   .u-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
 
   .title {
@@ -59,7 +65,7 @@
 }
 
 .our-process {
-  padding-block: var(--space-3xl);
+  padding-block-start: var(--space-3xl);
 
   .our-process__content {
     display: flex;
