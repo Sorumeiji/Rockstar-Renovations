@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;600&display=swap");
 
 @import "../assets/fontawesome/scss/fontawesome.scss";
 @import "../assets/fontawesome/scss/brands.scss";
@@ -42,8 +42,8 @@ h2 {
 
 h3 {
   font-size: var(--step-3);
-  font-family: var(--header-font);
-  font-weight: 400;
+  font-family: var(--text-font);
+  font-weight: 600;
 }
 
 h4 {

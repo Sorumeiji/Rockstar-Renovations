@@ -50,10 +50,37 @@
 
   .divider__text {
     padding-inline: 1em;
-    font-family: 'Bebas Neue';
+    font-family: "Bebas Neue";
     font-weight: 400;
     font-size: 1.2em;
     line-height: 1.2;
     display: block;
   }
+}
+
+.our-process {
+  padding-block: var(--space-3xl);
+
+  .our-process__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    & > * {
+      flex: 1 1 30ch;
+    }
+  }
+}
+
+.tiny-story {
+  padding-block: var(--space-3xl);
+  background-color: #3f444d;
+}
+
+.case-studies {
+  padding-block-start: var(--space-3xl);
+}
+
+.reviews {
+  padding-block-start: var(--space-3xl);
 }
