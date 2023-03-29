@@ -24,23 +24,25 @@
 
 			<div class='termsandservices'>
 				<ul class='termsandservices-items'>
-					<li><a href='#'>Link 1</a></li>
-					<li><a href='#'>Link 2</a></li>
-					<li><a href='#'>Link 3</a></li>
+					<li><a href='#'>Renovations</a></li>
+					<li><a href='#'>Our Story</a></li>
+					<li><a href='#'>Contact Us</a></li>
 				</ul>
 			</div>
 
 			<div class='socials'>
 				<ul class='socials-items'>
-					<li><a href='#'>Twitter</a></li>
-					<li><a href='#'>Github</a></li>
-					<li><a href='#'>Codepen</a></li>
+					<li>
+						<a href='https://www.facebook.com/RockstarRenovations2020' target='_blank'>
+							<i class='fa-brands fa-facebook'></i> Facebook
+						</a>
+					</li>
 				</ul>
 			</div>
 		</article>
 		<hr />
 		<article class='bottom-footer'>
-			<p>Copyright 2023, Rockstar Renovations. All rights reserved.</p>
+			<p>&copy; Copyright 2023, Rockstar Renovations. All rights reserved.</p>
 			<ul class='copy-items'>
 				<li>
 					<a href='#'>Privacy Policy</a>
@@ -73,6 +75,14 @@
 
 			& li a {
 				color: var(--dark-color);
+				text-decoration: none;
+				transition: all 0.3s ease-in-out;
+				border-bottom: 1px solid transparent;
+
+				&:hover {
+					border-bottom: 1px solid var(--dark-color);
+					color: cadetblue;
+				}
 			}
 		}
 

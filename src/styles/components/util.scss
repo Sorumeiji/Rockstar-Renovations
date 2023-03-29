@@ -1,2 +1,25 @@
 a[role="button"] {
+    // margin-block-start: var(--space-m);
+    text-decoration: none;
+    border: 1px solid var(--background-base-color);
+    color: var(--background-base-color);
+    max-width: 216px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 0.5em;
+    padding-inline: 0.8em;
+    border-radius: 5px;
+    font-family: var(--text-font);
+    transition: 0.3s ease-in-out;
+
+    i {
+        margin-inline-end: 0.5em;
+    }
+
+    &:hover {
+        border: 1px solid transparent;
+        background-color: cadetblue;
+        color: white;
+    }
 }

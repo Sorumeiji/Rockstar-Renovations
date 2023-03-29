@@ -9,7 +9,7 @@
 		</ul>
 	</div>
 	<div class='filler'>
-		<a href='#'>Get An Estimate</a>
+		<a href='#' role='button'><i class='fa-solid fa-guitars'></i>Get An Estimate</a>
 	</div>
 </nav>
 <style lang='scss'>
@@ -68,6 +68,12 @@
 
 		& li a {
 			color: white;
+			transition: all 0.3s ease-in-out;
+			border-bottom: 1px solid transparent;
+
+			&:hover {
+				border-bottom: 1px solid cadetblue;
+			}
 		}
 
 		& li a .active {
@@ -118,6 +124,7 @@
 
 			& li a {
 				color: #fcf4ef;
+				text-decoration: none;
 			}
 
 			& li + li {

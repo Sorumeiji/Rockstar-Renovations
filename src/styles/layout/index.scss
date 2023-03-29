@@ -95,9 +95,23 @@
 
 .case-studies {
   padding-block-start: var(--space-3xl);
-  // background-color: #3f444d;
+
+  .demo-galery img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+  }
 }
 
 .reviews {
   padding-block: var(--space-3xl);
+
+  .u-container {
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: var(--step-1);
+    }
+  }
 }
