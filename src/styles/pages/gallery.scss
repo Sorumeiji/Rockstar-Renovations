@@ -1,0 +1,25 @@
+.gallery {
+    background-color: #212326;
+    header {
+        .title {
+            padding-block-start: var(--space-3xl);
+            h1 {
+                color: var(--background-base-color);
+            }
+        }
+    }
+}
+
+.gallery-images {
+    padding-block-start: var(--space-2xl);
+    .demo-galery img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+    }
+}
+
+.gallery-story {
+    padding-block: var(--space-2xl);
+}

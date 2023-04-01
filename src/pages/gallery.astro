@@ -4,47 +4,44 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Welcome to Rockstar Renovations.'>
-	<Navbar />
-	<main>
-		<header class='hero'>
+	<main class='gallery'>
+		<header>
+			<Navbar />
 			<div class='u-container'>
-				<div>
-					<h1>Renovations / Gallery</h1>
-					<p>About Rockstar Renovations</p>
+				<div class='title'>
+					<h1>Album of renovations.</h1>
 				</div>
 			</div>
 		</header>
 
-		<section class='our-process'>
+		<section class='gallery-images'>
 			<div class='u-container flow'>
-				<menu class='our-process__subtitle'>
+				<!-- <menu class='our-process__subtitle'>
 					<ul>
 						<li><a href='#'>Bath</a></li>
 						<li><a href='#'>Home</a></li>
 						<li><a href='#'>Kitchen</a></li>
 						<li><a href='#'>Landscape</a></li>
 					</ul>
-				</menu>
+				</menu> -->
 				<article>
-					<div class='smol-flexbox-grid'>
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
+					<div class='demo-galery smol-flexbox-grid'>
+						<img alt='picture of kitchen renovation' src='/images/1.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/2.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/3.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/4.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/5.jpg' />
+						<img alt='picture of entrance renovation' src='/images/6.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/7.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/8.jpg' />
+						<img alt='picture of entrance renovation' src='/images/9.jpg' />
+						<img alt='picture of entrance renovation' src='/images/10.jpg' />
 					</div>
 				</article>
 			</div>
 		</section>
 
-		<section class='tiny-story'>
+		<section class='gallery-story'>
 			<div class='u-container flow'>
 				<p>
 					Rockstar Renovations was started in January of 2020 as a side hustle for the owners,
