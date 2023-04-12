@@ -9,21 +9,17 @@ import Layout from '../layouts/Layout.astro';
 			<Navbar />
 			<div class='u-container'>
 				<div class='title'>
-					<h1>Album of renovations.</h1>
+					<h2>Album of renovations.</h2>
+					<p>
+						A feast for the eyes, showcasing some of the most breathtaking home renovation projects
+						you'll ever see.
+					</p>
 				</div>
 			</div>
 		</header>
 
 		<section class='gallery-images'>
 			<div class='u-container flow'>
-				<!-- <menu class='our-process__subtitle'>
-					<ul>
-						<li><a href='#'>Bath</a></li>
-						<li><a href='#'>Home</a></li>
-						<li><a href='#'>Kitchen</a></li>
-						<li><a href='#'>Landscape</a></li>
-					</ul>
-				</menu> -->
 				<article>
 					<div class='demo-galery smol-flexbox-grid'>
 						<img alt='picture of kitchen renovation' src='/images/1.jpg' />
@@ -42,13 +38,15 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<section class='gallery-story'>
-			<div class='u-container flow'>
+			<div style='border-left: 1px solid white;' class='u-container flow'>
 				<p>
-					Rockstar Renovations was started in January of 2020 as a side hustle for the owners,
-					Michael and Brett. Soon, the two came to realize that their “side hustle” could be much
-					more and they could even be their own bosses.
+					Coming Soon, our case studies page will be the natural next step after browsing through
+					some of our renovations, as it provides a deeper understanding of the transformation
+					process behind each stunning renovation project.
 				</p>
-				<a href='' role='button'>View Case Studies</a>
+				<a class='button-disabled' role='button'>
+					<i class='fa-solid fa-guitar-electric'></i> View Case Studies
+				</a>
 			</div>
 		</section>
 	</main>

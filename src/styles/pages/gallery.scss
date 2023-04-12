@@ -1,9 +1,10 @@
 .gallery {
-    background-color: #212326;
+    background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 30.4%, rgba(35, 42, 65, 0.9) 70.2%);
     header {
         .title {
             padding-block-start: var(--space-3xl);
-            h1 {
+            h2,
+            p {
                 color: var(--background-base-color);
             }
         }
@@ -11,7 +12,7 @@
 }
 
 .gallery-images {
-    padding-block-start: var(--space-2xl);
+    padding-block-start: var(--space-l);
     .demo-galery img {
         object-fit: cover;
         width: 300px;
@@ -22,4 +23,5 @@
 
 .gallery-story {
     padding-block: var(--space-2xl);
+    color: white;
 }

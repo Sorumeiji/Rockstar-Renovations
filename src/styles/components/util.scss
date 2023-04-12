@@ -3,7 +3,7 @@ a[role="button"] {
     text-decoration: none;
     border: 1px solid var(--background-base-color);
     color: var(--background-base-color);
-    max-width: 216px;
+    max-width: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,4 +22,10 @@ a[role="button"] {
         background-color: cadetblue;
         color: white;
     }
+}
+
+.button-disabled {
+    background-color: rgb(114, 114, 114) !important;
+    color: rgb(62, 62, 62) !important;
+    border: 1px solid rgb(114, 114, 114) !important;
 }
