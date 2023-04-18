@@ -1,117 +1,119 @@
-.hero {
-  background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 11.4%, rgba(35, 42, 65, 0.9) 70.2%);
-  position: relative;
-  overflow: hidden;
-
-  .video-bg {
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-  }
-
-  .u-container {
-  }
-
-  .title {
-    color: #fcf4ef;
-    padding-block-start: 5em;
-
-    .shiftH1 {
-      margin-inline-start: 0.5em;
-    }
-
-    .shiftP {
-      margin-inline-start: 3.2em;
-    }
-  }
-  .content {
-    color: #fcf4ef;
-    padding-block-start: 3em;
-    padding-block-end: 5em;
-  }
-}
-
-.divider {
-  display: flex;
-  justify-content: flex-start;
-  min-height: 100%;
-  min-width: 100%;
-
-  .divider__line {
-    flex-basis: 30%;
-    height: 1.2em;
+.index {
+  .hero {
     background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 11.4%, rgba(35, 42, 65, 0.9) 70.2%);
-  }
+    position: relative;
+    overflow: hidden;
 
-  .divider__text {
-    padding-inline: 1em;
-    font-family: "Bebas Neue";
-    font-weight: 400;
-    font-size: 1.2em;
-    line-height: 1.2;
-    display: block;
-  }
-}
+    .video-bg {
+      position: absolute;
+      object-fit: cover;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+    }
 
-.our-process {
-  padding-block: var(--space-3xl);
+    .u-container {
+    }
 
-  .our-process__content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    .title {
+      color: #fcf4ef;
+      padding-block-start: 5em;
 
-    & > * {
-      flex: 1 1 30ch;
+      .shiftH1 {
+        margin-inline-start: 0.5em;
+      }
+
+      .shiftP {
+        margin-inline-start: 3.2em;
+      }
+    }
+    .content {
+      color: #fcf4ef;
+      padding-block-start: 3em;
+      padding-block-end: 5em;
     }
   }
-}
 
-.tiny-story {
-  padding-block: var(--space-3xl);
-  background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 11.4%, rgba(35, 42, 65, 0.9) 70.2%);
+  .divider {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100%;
+    min-width: 100%;
 
-  & header {
-    color: cadetblue;
-  }
-
-  & article p {
-    color: var(--background-base-color);
-  }
-
-  & .divider {
     .divider__line {
-      flex-basis: 5%;
-      height: 1em;
-      background: var(--background-base-color);
+      flex-basis: 30%;
+      height: 1.2em;
+      background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 11.4%, rgba(35, 42, 65, 0.9) 70.2%);
+    }
+
+    .divider__text {
+      padding-inline: 1em;
+      font-family: "Bebas Neue";
+      font-weight: 400;
+      font-size: 1.2em;
+      line-height: 1.2;
+      display: block;
     }
   }
-}
 
-.case-studies {
-  padding-block-start: var(--space-3xl);
+  .our-process {
+    padding-block: var(--space-3xl);
 
-  .demo-galery img {
-    object-fit: cover;
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
+    .our-process__content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      & > * {
+        flex: 1 1 30ch;
+      }
+    }
   }
-}
 
-.reviews {
-  padding-block: var(--space-3xl);
+  .tiny-story {
+    padding-block: var(--space-3xl);
+    background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 11.4%, rgba(35, 42, 65, 0.9) 70.2%);
 
-  .u-container {
-    display: flex;
-    justify-content: center;
-    p {
-      font-size: var(--step-1);
+    & header {
+      color: cadetblue;
+    }
+
+    & article p {
+      color: var(--background-base-color);
+    }
+
+    & .divider {
+      .divider__line {
+        flex-basis: 5%;
+        height: 1em;
+        background: var(--background-base-color);
+      }
+    }
+  }
+
+  .case-studies {
+    padding-block-start: var(--space-3xl);
+
+    .demo-galery img {
+      object-fit: cover;
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+    }
+  }
+
+  .reviews {
+    padding-block: var(--space-3xl);
+
+    .u-container {
+      display: flex;
+      justify-content: center;
+      p {
+        font-size: var(--step-1);
+      }
     }
   }
 }
