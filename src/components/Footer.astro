@@ -1,5 +1,10 @@
 <footer class='footer'>
 	<div class='u-container'>
+		<section class='divider'>
+			<small class='divider__text'>ROCKSTAR RENOVATIONS</small>
+			<div class='divider__line'>&nbsp;</div>
+		</section>
+
 		<article class='top-footer'>
 			<div class='logo'>
 				<svg
@@ -66,6 +71,7 @@
 
 	.footer {
 		padding-block: var(--space-xl);
+		background-color: var(--dark-color);
 		ul {
 			display: flex;
 			flex-direction: column;
@@ -88,6 +94,30 @@
 
 		hr {
 			margin-block: var(--space-s);
+		}
+
+		.divider {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			min-height: 100%;
+			min-width: 100%;
+			padding-block-end: var(--space-xl);
+
+			.divider__line {
+				flex-basis: 40%;
+				height: 1.1em;
+				background-color: var(--dark-color);
+			}
+
+			.divider__text {
+				padding-inline-end: 1em;
+				font-family: 'Bebas Neue';
+				font-weight: 400;
+				font-size: 2em;
+				line-height: 2;
+				display: block;
+			}
 		}
 	}
 
