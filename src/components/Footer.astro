@@ -21,9 +21,9 @@
 
       <div class="termsandservices">
         <ul class="termsandservices-items">
-          <li><a href="#">Renovations</a></li>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="/gallery">Renovations</a></li>
+          <li><a href="/our-story">Our Story</a></li>
+          <li><a href="/contact-us">Contact Us</a></li>
         </ul>
       </div>
 
@@ -39,16 +39,18 @@
     </article>
     <hr />
     <article class="bottom-footer">
-      <p>&copy; Copyright 2023, Rockstar Renovations. All rights reserved.</p>
+      <p>
+        <i class="fa-light fa-copyright"></i> Copyright 2023, Rockstar Renovations. All rights reserved.
+      </p>
       <ul class="copy-items">
         <li>
-          <a href="#">Privacy Policy</a>
+          <a href="/privacy-policy">Privacy Policy</a>
         </li>
         <li>
-          <a href="#">Terms of Service</a>
+          <a href="/terms-of-service">Terms of Service</a>
         </li>
         <li>
-          <a href="#">Cookies Settings</a>
+          <a href="/cookies">Cookies Settings</a>
         </li>
       </ul>
     </article>
@@ -103,18 +105,13 @@
       }
 
       .divider__text {
-        padding-inline: 1em;
-        padding-block-start: 0.2em;
+        padding-inline-end: 1em;
         font-family: 'Bebas Neue';
         font-weight: 400;
-        color: var(--color-dark);
-        font-size: 2em;
-        line-height: 1;
-        width: 100%;
-        color: var(--background-base-color);
-        background-image: linear-gradient(112.1deg, rgba(19, 21, 31, 0.8) 100%, rgba(47, 48, 88, 0.9) 0%),
-          url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.50' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        font-size: var(--step-5);
+        line-height: 2;
         display: block;
+        color: var(--background-base-color);
       }
     }
   }

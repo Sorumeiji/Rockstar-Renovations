@@ -21,7 +21,7 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: #fcf4ef;
+    background-color: var(--background-base-color);
 }
 
 img,
