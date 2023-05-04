@@ -4,16 +4,16 @@
         .title {
             padding-block-start: 5em;
             h1 {
-                color: var(--color-dark);
+                color: var(--dark-color);
                 line-height: 1.2;
             }
             p {
-                color: var(--color-dark);
+                color: var(--dark-color);
             }
         }
     }
     .story {
         padding-block: var(--space-l);
-        color: var(--color-dark);
+        color: var(--dark-color);
     }
 }
