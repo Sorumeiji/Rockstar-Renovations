@@ -41,6 +41,28 @@
     }
   }
 
+  .divider {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100%;
+    max-width: 100%;
+
+    .divider__line {
+      flex-basis: 30%;
+      height: 1.2em;
+      background-color: #0f1923;
+    }
+
+    .divider__text {
+      padding-inline: 1em;
+      font-family: "Bebas Neue";
+      font-weight: 400;
+      font-size: 1.2em;
+      line-height: 1.2;
+      display: block;
+    }
+  }
+
   .our-process {
     padding-block: var(--space-3xl);
     background-image: url(https://astro.build/assets/noise.webp);
@@ -76,29 +98,6 @@
         background: var(--background-base-color);
       }
       margin-block-end: var(--space-s);
-    }
-  }
-
-  .divider {
-    display: flex;
-    justify-content: flex-start;
-    min-height: 100%;
-    min-width: 100%;
-    background-image: url(https://astro.build/assets/noise.webp);
-
-    .divider__line {
-      flex-basis: 30%;
-      height: 1.2em;
-      background-color: #0f1923;
-    }
-
-    .divider__text {
-      padding-inline: 1em;
-      font-family: "Bebas Neue";
-      font-weight: 400;
-      font-size: 1.2em;
-      line-height: 1.2;
-      display: block;
     }
   }
 
