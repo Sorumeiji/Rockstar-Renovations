@@ -4,54 +4,78 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Welcome to Rockstar Renovations.'>
-	<Navbar />
-	<main>
-		<header class='hero'>
+	<main class='gallery'>
+		<header>
+			<Navbar />
 			<div class='u-container'>
-				<div>
-					<h1>Renovations / Gallery</h1>
-					<p>About Rockstar Renovations</p>
+				<div class='title'>
+					<h1>Album of renovations.</h1>
+					<p>
+						A feast for the eyes, showcasing some of the most breathtaking home renovation projects
+						you'll ever see.
+					</p>
 				</div>
 			</div>
 		</header>
 
-		<section class='our-process'>
+		<section class='gallery-images'>
 			<div class='u-container flow'>
-				<menu class='our-process__subtitle'>
-					<ul>
-						<li><a href='#'>Bath</a></li>
-						<li><a href='#'>Home</a></li>
-						<li><a href='#'>Kitchen</a></li>
-						<li><a href='#'>Landscape</a></li>
-					</ul>
-				</menu>
-				<article>
-					<div class='smol-flexbox-grid'>
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
+				<article class='flow'>
+					<div class='demo-galery smol-flexbox-grid'>
+						<img alt='picture of kitchen renovation' src='/images/1.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/2.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/3.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/4.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/5.jpg' />
+						<img alt='picture of entrance renovation' src='/images/6.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/7.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/8.jpg' />
+						<img alt='picture of entrance renovation' src='/images/9.jpg' />
+						<img alt='picture of entrance renovation' src='/images/10.jpg' />
+					</div>
+					<div class='demo-galery smol-flexbox-grid'>
+						<img alt='picture of kitchen renovation' src='/images/11.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/12.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/13.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/14.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/15.jpg' />
+						<img alt='picture of entrance renovation' src='/images/16.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/17.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/18.jpg' />
+						<img alt='picture of entrance renovation' src='/images/19.jpg' />
+						<img alt='picture of entrance renovation' src='/images/20.jpg' />
+					</div>
+					<div class='demo-galery smol-flexbox-grid'>
+						<img alt='picture of kitchen renovation' src='/images/21.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/22.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/23.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/24.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/25.jpg' />
+						<img alt='picture of entrance renovation' src='/images/26.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/27.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/28.jpg' />
+						<img alt='picture of entrance renovation' src='/images/29.jpg' />
+						<img alt='picture of entrance renovation' src='/images/30.jpg' />
+					</div>
+					<div class='demo-galery smol-flexbox-grid'>
+						<img alt='picture of kitchen renovation' src='/images/31.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/32.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/33.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/34.jpg' />
 					</div>
 				</article>
 			</div>
 		</section>
 
-		<section class='tiny-story'>
-			<div class='u-container flow'>
+		<section class='gallery-story'>
+			<div style='border-left: 1px solid hsl(220, 4%, 17%);' class='u-container flow'>
 				<p>
-					Rockstar Renovations was started in January of 2020 as a side hustle for the owners,
-					Michael and Brett. Soon, the two came to realize that their “side hustle” could be much
-					more and they could even be their own bosses.
+					Our renovations are done right and done with heart. We aim to be great and to excel at
+					every aspect in our process. That is the rockstar way.
 				</p>
-				<a href='' role='button'>View Case Studies</a>
+				<!-- <a class='button-disabled' role='button'>
+					<i class='fa-solid fa-guitar-electric'></i> View Case Studies
+				</a> -->
 			</div>
 		</section>
 	</main>

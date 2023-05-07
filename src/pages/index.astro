@@ -1,11 +1,12 @@
 ---
-import Navbar from '../components/Navbar.astro';
+import NavbarHome from '../components/NavbarHome.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title='Welcome to Rockstar Renovati ons.'>
-	<main>
+<Layout title='Welcome to Rockstar Renovations.'>
+	<main class='index'>
 		<header class='hero'>
+			<NavbarHome />
 			<main class='u-container'>
 				<header class='title'>
 					<h1>Rockstar<br /><span class='shiftH1'>Renovations</span></h1>
@@ -13,16 +14,16 @@ import Layout from '../layouts/Layout.astro';
 				</header>
 				<article class='content flow'>
 					<p>
-						Specialist in a variety of renovation services, from tile installation to pool care to
-						HVAC repair. Our team of experienced professionals can provide you with the highest
-						quality of service, ensuring that every job is done right.
+						A fully insured business, both in general liability and workman's compensation.
+						Renovations for the modern style.
 					</p>
-					<p>
-						We are a fully insured business, both in general liability and workman's compensation.
-						Renovations for the modern style. Send a email to <span style='color:aquamarine'>
-							RockstarRenovations2020@gmail.com
-						</span> and give us a project or request.
-					</p>
+					<a
+						target='_blank'
+						href='mailto:rockstarrenovations2020@gmail.com?subject=Project Request'
+						role='button'
+					>
+						<i class='fa-solid fa-guitar-electric'></i> Lets get Rocking
+					</a>
 				</article>
 			</main>
 			<video class='video-bg' playsinline autoplay muted loop id='bgvid'>
@@ -30,12 +31,12 @@ import Layout from '../layouts/Layout.astro';
 			</video>
 		</header>
 
-		<!-- <section class='divider'>
+		<section class='divider'>
 			<div class='divider__line'>&nbsp;</div>
 			<small class='divider__text'>WE GIVE THE ROCKSTAR TREAMENT</small>
 		</section>
 
-		<section class='our-process'>
+		<section id='our-proces' class='our-process'>
 			<div class='u-container flow'>
 				<header class='our-process__subtitle'>
 					<h2>Our process that rocks.</h2>
@@ -74,13 +75,18 @@ import Layout from '../layouts/Layout.astro';
 				<header>
 					<h2>A bit of history.</h2>
 				</header>
-				<article>
+				<article class='flow'>
 					<p>
 						Rockstar Renovations was started in January of 2020 as a side hustle for the owner,
 						Michael Wilson. Soon, he came to realize that his “side hustle” could be much more and
 						he could even be his own boss.
 					</p>
-					<a href='' role='button'><i class='fa-solid fa-guitar-electric'></i> Read Full Story</a>
+					<div class='divider'>
+						<div class='divider__line'>&nbsp;</div>
+					</div>
+					<a href='/our-story' role='button'>
+						<i class='fa-solid fa-guitar-electric'></i> Read Full Story
+					</a>
 				</article>
 			</div>
 		</section>
@@ -88,20 +94,20 @@ import Layout from '../layouts/Layout.astro';
 		<section class='case-studies'>
 			<div class='u-container flow'>
 				<header class='flow'>
-					<h2>Gallery & Studies</h2>
+					<h2>Legendary Upgrades.</h2>
 					<p>
-						We are proud to showcase the projects we have completed for our clients. Each case study
+						We are proud to showcase the projects we have completed for our clients. Each image
 						showcases the work we have done, as well as our process, from estimate to completion.
 					</p>
 				</header>
 				<article>
-					<div class='smol-flexbox-grid'>
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
+					<div class='demo-galery smol-flexbox-grid'>
+						<img alt='picture of kitchen renovation' src='/images/1.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/2.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/3.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/4.jpg' />
+						<img alt='picture of bathroom renovation' src='/images/5.jpg' />
+						<img alt='picture of entrance renovation' src='/images/6.jpg' />
 					</div>
 				</article>
 			</div>
@@ -109,14 +115,16 @@ import Layout from '../layouts/Layout.astro';
 
 		<section class='reviews'>
 			<div class='u-container'>
-				<header class='flow'>
-					<h2>Reviews</h2>
-					<p>
-						We are proud to showcase the projects we have completed for our clients. Each case study
-						showcases the work we have done, as well as our process, from estimate to completion.
-					</p>
-				</header>
+				<article class='flow content'>
+					<div class='flow'>
+						<p>
+							" Too many good things! Michael was upbeat, professional, worked efficiently and
+							restored my kitchen and living room like a pro! Highly recommend! "
+						</p>
+						<p>~ Amy Leigh Davis</p>
+					</div>
+				</article>
 			</div>
-		</section> -->
+		</section>
 	</main>
 </Layout>

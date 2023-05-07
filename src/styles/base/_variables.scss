@@ -1,8 +1,8 @@
 :root {
   /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.2,6,2,&s=0.75|0.5,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-  --header-font: "Bebas Neue", cursive;
-  --text-font: "Nunito", sans-serif;
+  --header-font: 'Bebas Neue', cursive;
+  --text-font: 'Nunito', sans-serif;
 
   --step--2: clamp(0.69rem, calc(0.63rem + 0.3vw), 0.87rem);
   --step--1: clamp(0.83rem, calc(0.76rem + 0.36vw), 1.04rem);
@@ -46,7 +46,8 @@
   --grid-columns: 8;
 
   --dark-color: hsl(220, 4%, 17%);
-  --background-base-color: hsl(225, 40%, 96%);
+  --background-base-color: hsl(38, 22%, 90%);
+  --secondary-color: hsl(359, 70%, 56%);
   --background-hero-color: hsl(220, 20%, 94%);
   --background-card-color: hsl(90, 6%, 86%);
   --background-footer-color: hsl(86, 9%, 84%);

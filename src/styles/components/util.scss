@@ -1,2 +1,62 @@
+$base-color-dark: hsl(220, 4%, 17%);
+$border-dark: hsl(220, 4%, 17%);
+
 a[role="button"] {
+  text-decoration: none;
+  border: 1px solid var(--background-base-color);
+  color: var(--background-base-color);
+  max-width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 0.5em;
+  padding-inline: 0.8em;
+  border-radius: 5px;
+  font-family: var(--text-font);
+  transition: 0.3s ease-in-out;
+
+  i {
+    margin-inline-end: 0.5em;
+  }
+
+  &:hover {
+    border: 1px solid transparent;
+    background-color: #dd4244;
+    color: #ece8e1;
+  }
+}
+
+a[role="button-dark"] {
+  text-decoration: none;
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+  max-width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 0.5em;
+  padding-inline: 0.8em;
+  border-radius: 5px;
+  font-family: var(--text-font);
+  transition: 0.3s ease-in-out;
+
+  i {
+    margin-inline-end: 0.5em;
+  }
+
+  &:hover {
+    border: 1px solid transparent;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+}
+
+.button-disabled {
+  background-color: rgb(114, 114, 114) !important;
+  color: rgb(62, 62, 62) !important;
+  border: 1px solid rgb(114, 114, 114) !important;
+}
+
+.accent {
+  color: var(--secondary-color);
 }

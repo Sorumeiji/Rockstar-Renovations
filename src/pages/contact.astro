@@ -4,54 +4,41 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Welcome to Rockstar Renovations.'>
-	<Navbar />
-	<main>
+	<main class='contact'>
+		<Navbar />
 		<header class='hero'>
 			<div class='u-container'>
-				<div>
-					<h1>Renovations / Gallery</h1>
-					<p>About Rockstar Renovations</p>
+				<div class='title flow'>
+					<h1>Reach out and renovate.</h1>
+					<p>
+						Get in touch with us for your next renovation project. Let use help you make it a dream
+						come true. For project details please include goals, deadline and time estimates,
+						project budget or budget estimates.
+					</p>
+
+					<p>
+						By sending a project request to Rockstar Renovations, clients agree to our <a
+							href='/terms-of-service'
+						>
+							terms of service.
+						</a>
+					</p>
 				</div>
 			</div>
 		</header>
 
-		<section class='our-process'>
+		<section class='contact-us'>
 			<div class='u-container flow'>
-				<menu class='our-process__subtitle'>
-					<ul>
-						<li><a href='#'>Bath</a></li>
-						<li><a href='#'>Home</a></li>
-						<li><a href='#'>Kitchen</a></li>
-						<li><a href='#'>Landscape</a></li>
-					</ul>
-				</menu>
 				<article>
-					<div class='smol-flexbox-grid'>
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-						<img src='https://picsum.photos/250/200/' />
-					</div>
+					<ul role='list' class='flow'>
+						<li>
+							<a href='mailto:rockstarrenovations2020@gmail.com?subject=Project Request'>
+								<i class='fa-solid fa-envelope'></i>&nbsp; Rockstar Renovations2020@gmail.com
+							</a>
+						</li>
+						<li><i class='fa-solid fa-phone-office'></i>&nbsp; 1+ 785-760-0016</li>
+					</ul>
 				</article>
-			</div>
-		</section>
-
-		<section class='tiny-story'>
-			<div class='u-container flow'>
-				<p>
-					Rockstar Renovations was started in January of 2020 as a side hustle for the owners,
-					Michael and Brett. Soon, the two came to realize that their “side hustle” could be much
-					more and they could even be their own bosses.
-				</p>
-				<a href='' role='button'>View Case Studies</a>
 			</div>
 		</section>
 	</main>
