@@ -17,6 +17,15 @@
             }
         }
     }
+
+    .owners {
+        padding-block: var(--space-xl);
+        img {
+            border-radius: 1em;
+            max-width: 100%;
+        }
+    }
+
     .story {
         padding-block: var(--space-l);
         color: var(--dark-color);
